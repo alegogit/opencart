@@ -1,0 +1,102 @@
+body{
+	background: #000;
+	color: #fff;
+}
+a{
+	color: #000;
+}
+h1,h2,h3,h4,h5,h6,
+#menu .nav > li > a,
+#menu .dropdown-inner a,
+#menu .see-all{
+	font-weight: bolder;
+	color:	#d6a41b; /*if no support for background-clip*/
+	background: -webkit-linear-gradient(top, #ece7b6 0%,#d6a41b 55%,#db931b 78%,#4c2101 89%,#db931b 99%,#ece7b6 100%); /* Chrome10-25,Safari5.1-6 */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#top{
+	border: none;
+	background: #000;
+	position: fixed;
+   top: 0;
+	z-index: 9;
+	width: 100%;
+}
+#top .btn-link, #top-links li, #top-links a {
+    color: #f5f5f5;
+    text-shadow: none;
+}
+#top .btn-link:hover, #top-links a:hover {
+    color: #d6a41b;
+}
+#menu, #menu .btn-navbar{
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+   background-color: #363636;
+   background-image: linear-gradient(to bottom, #444444, #222222);
+   background-repeat: repeat-x;
+   border-color: #222222 #222222 #000000;
+}
+#menu .see-all{
+	border-top: 1px solid #000;
+}
+#menu .see-all:hover, #menu .see-all:focus, 
+#menu .dropdown-inner a:hover,
+.dropdown-menu li > a:hover {
+	color: #000;
+	background: #d6a41b; 
+}
+.dropdown-menu{
+	border: 1px solid #000;
+   -webkit-border-radius: 0px 0px 5px 5px;
+   -moz-border-radius: 0px 0px 5px 5px;
+   -khtml-border-radius: 0px 0px 5px 5px;
+   border-radius: 0px 0px 5px 5px;
+   background: url('../image/menu.png');
+}
+.breadcrumb,
+.btn-gold{
+	color: #000;
+	border: none;
+	background: #d6a41b; /* Old browsers */
+	background: -moz-linear-gradient(top, #ece7b6 0%, #d6a41b 55%, #db931b 78%, #4c2101 89%, #db931b 99%, #ece7b6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ece7b6 0%,#d6a41b 55%,#db931b 78%,#4c2101 89%,#db931b 99%,#ece7b6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ece7b6 0%,#d6a41b 55%,#db931b 78%,#4c2101 89%,#db931b 99%,#ece7b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ece7b6', endColorstr='#ece7b6',GradientType=0 ); /* IE6-9 */
+}
+.breadcrumb > li {
+   text-shadow: 0 1px 0 #222;
+}
+.breadcrumb > li:after { 
+	border-right: 1px solid #000;
+   border-bottom: 1px solid #000;
+}
+#search .btn-lg {
+	padding: 10px;
+}
+#logo > a > img {
+	max-width: 55%;
+}
+header{
+	margin-top: 170px;
+}
+@media (max-width: 767px){
+	#logo{
+		text-align: center;
+	}
+	#logo > a > img {
+		display: inline-block;
+	}
+	#menu{
+		margin: 0 15px 0 15px;
+	}
+	header{
+		margin-top: 300px;
+	}
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+	width: 100%;
+}
+/*
+*
